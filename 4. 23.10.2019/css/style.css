@@ -1,0 +1,78 @@
+.wrapper{
+    background: url("../img/bg-image.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.wrapper h1{
+    line-height: 55px;
+}
+.wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212529;
+    opacity: 0.3;
+    z-index: 0;
+}
+.overlay{
+    position: relative;
+    z-index: 1;
+}
+.features{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.features .feature-icon i{
+    font-size: 4.5rem;
+    color: #007bff;
+}
+.feature-item p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.information .text{
+    padding: 7rem;
+}
+.information .text p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.testimonials img{
+    max-width: 12rem;
+    box-shadow: 0 5px 5px 0 #adb5bd;
+}
+.newsletter{
+    background: url("../img/bg-image.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.newsletter::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212529;
+    opacity: 0.3;
+    z-index: 0;
+}
+.footer .social i{
+    font-size: 2rem;
+    color: #007bff;
+    width: 1.25em;
+}
+.feature-item .feature-icon i{
+    transition: all .3s;
+}
+.feature-item:hover .feature-icon i{
+    transform: scale(1.1);
+}
