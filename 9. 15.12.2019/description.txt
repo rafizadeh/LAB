@@ -1,0 +1,10 @@
+https://medium.com/@salihaker/it-kariyeriniz-i%C3%A7in-bilinmesi-gereken-17-protokol-ba7e583af198
+Önəmli bəzi protokollar haqda məlumat.
+
+https://demo.hasthemes.com/corano-preview/corano/index.html
+template'deki navbari 0'dan yazmaq.
+
+is() metodunu arashdirmaq. is(:hover)!!!
+
+https://daneden.github.io/animate.css/
+animationlar uchun source.
