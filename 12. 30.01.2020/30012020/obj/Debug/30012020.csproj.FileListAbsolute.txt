@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\30012020\bin\Debug\30012020.exe.config
+C:\Users\User\source\repos\30012020\bin\Debug\30012020.exe
+C:\Users\User\source\repos\30012020\bin\Debug\30012020.pdb
+C:\Users\User\source\repos\30012020\obj\Debug\30012020.csprojAssemblyReference.cache
+C:\Users\User\source\repos\30012020\obj\Debug\30012020.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\30012020\obj\Debug\30012020.exe
+C:\Users\User\source\repos\30012020\obj\Debug\30012020.pdb
+C:\Users\User\Desktop\30012020\bin\Debug\30012020.exe.config
+C:\Users\User\Desktop\30012020\bin\Debug\30012020.exe
+C:\Users\User\Desktop\30012020\bin\Debug\30012020.pdb
+C:\Users\User\Desktop\30012020\obj\Debug\30012020.csprojAssemblyReference.cache
+C:\Users\User\Desktop\30012020\obj\Debug\30012020.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\30012020\obj\Debug\30012020.exe
+C:\Users\User\Desktop\30012020\obj\Debug\30012020.pdb
