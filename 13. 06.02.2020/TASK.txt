@@ -1,0 +1,35 @@
+1.IP-ünvan
+İnternetə çıxmaq üçün hər bir komyuterə IP-ünvanı verilir. O nöqtə ilə ayrılmış 0-dan 255-ə qədər dörd tam ədəd ehtiva edir. 
+Növbəti üç sətirdə üç düzgün IP-ünvan verilir:
+
+127.0.0.0
+
+192.168.0.01
+
+255.00.255.255
+
+Verilmiş sətrin düzgün IP-ünvan olduğunu təyin edən proqram yazın.
+
+Giriş verilənləri
+
+Proqramın girişinə rəqəmlər və düz üç nöqtə ehtiva edən 15 simvoldan çox olmayan sətir verilir.
+
+Çıxış verilənləri
+
+Əgər sətir düzgün IP-ünvandırsa, 1 əks halda 0 verin.
+
+2. 2 vahid artırma
+Tam ədədlər ardıcıllığı verilir. Ardıcıllığın hər bir mənfi olmayan elementini 2 vahid artırmalı.
+
+Giriş verilənləri
+Birinci sətirdə ardıcıllığın elementlərinin sayını ifadə edən n (n ≤ 100) natural ədədi verilir. İkinci sətirdə boşluqla ayrılmış, 
+qiyməti modulca 100-dən böyük olmayan ardıcıllığın elementləri verilir.
+
+Çıxış verilənləri
+Tək sətirdə ardıcıllığın n sayda yeni qiymətlərini eyni ardıcıllıqla boşluqla ayrılmış şəkildə verməli.
+
+Giriş verilənləri #1
+4
+1 2 3 -4
+Çıxış verilənləri #1
+3 4 5 -4
