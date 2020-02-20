@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\bin\Debug\20022020.exe.config
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\bin\Debug\20022020.exe
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\bin\Debug\20022020.pdb
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\20022020.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\_20022020.Form1.resources
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\_20022020.Properties.Resources.resources
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\20022020.csproj.GenerateResource.cache
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\20022020.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\20022020.exe
+C:\Users\User\Desktop\LAB\Educated\14. 20.02.2020\20022020\obj\Debug\20022020.pdb
