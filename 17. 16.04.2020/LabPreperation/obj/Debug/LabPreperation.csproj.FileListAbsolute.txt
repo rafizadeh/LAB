@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\LabPreperation.exe.config
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\LabPreperation.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\LabPreperation.pdb
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.Form1.resources
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.Properties.Resources.resources
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.csproj.GenerateResource.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.csproj.CopyComplete
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabPreperation\obj\Debug\LabPreperation.pdb
