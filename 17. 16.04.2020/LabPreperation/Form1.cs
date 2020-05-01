@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClosedXML.Excel;
 
 namespace LabPreperation
 {
@@ -15,6 +16,8 @@ namespace LabPreperation
     {
 
         private P507Entities1 db = new P507Entities1();
+
+        List<Result> Results;
 
         public Form1()
         {
@@ -45,10 +48,10 @@ namespace LabPreperation
         // bütün nəticələri datagridview'ya doldurmaq üçün metod
         private void FillResults(int GroupId = 0, int StudentId = 0)
         {
-            List<Result> results = db.Results.Where(r => (GroupId != 0 ? r.Student.GroupId == GroupId : true) && (StudentId != 0 ? r.StudentId == StudentId : true)).OrderByDescending(r => r.Date).ToList();
+            Results = db.Results.Where(r => (GroupId != 0 ? r.Student.GroupId == GroupId : true) && (StudentId != 0 ? r.StudentId == StudentId : true)).OrderByDescending(r => r.Date).ToList();
 
             dgvResults.Rows.Clear();
-            foreach (Result result in results)
+            foreach (Result result in Results)
             {
                 dgvResults.Rows.Add(result.Id,
                                     result.Student.Group.Name,
@@ -105,5 +108,44 @@ namespace LabPreperation
             }
 
         }
+
+        #region Export to Excel
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult r = saveExcel.ShowDialog();
+
+            if(r != DialogResult.OK)
+            {
+                return;
+            }
+
+            var workbook = new XLWorkbook();
+            var ws = workbook.Worksheets.Add("Exam List");
+            ws.Row(1).Height = 50;
+
+            ws.Cell("A1").Value = "Qrup";
+            ws.Cell("B1").Value = "Tələbə";
+            ws.Cell("C1").Value = "İmtahan";
+            ws.Cell("D1").Value = "Tarix";
+            ws.Cell("E1").Value = "Qiymət";
+            ws.Cell("F1").Value = "Nəticə";
+
+            int rowNumber = 2;
+            foreach (Result result in Results)
+            {
+                ws.Cell(rowNumber, 1).Value = result.Student.Group.Name;
+                ws.Cell(rowNumber, 2).Value = result.Student.Name + " " + result.Student.Surname;
+                ws.Cell(rowNumber, 3).Value = result.Exam.Name;
+                ws.Cell(rowNumber, 4).Value = result.Date.ToString("dd.MM.yyyy");
+                ws.Cell(rowNumber, 5).Value = result.ExamResult.ToString("#.##");
+                ws.Cell(rowNumber, 6).Value = result.ExamResult > 700 ? "Uğurlu" : "Qaldı";
+
+                rowNumber++;
+            }
+
+            workbook.SaveAs(saveExcel.FileName);
+
+        }
+        #endregion
     }
 }
