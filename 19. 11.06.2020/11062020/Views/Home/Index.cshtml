@@ -1,0 +1,118 @@
+﻿@model List<Service>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- slider-area-start -->
+<div class="slider-area">
+    <div class="slider-wrapper ptb-250" style="background-image:url(assets/img/slider/1.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 pr-0">
+                    <div class="slider-text">
+                        <h2 class="cd-headline loading-bar">
+                            The most targetted repair
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">theme.</b>
+                                <b>company.</b>
+                                <b>man.</b>
+                            </span>
+                        </h2>
+                        <div class="slider-info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddoi dmj iusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <a href="~/#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider-area-end -->
+<!-- home-service-start -->
+<div class="home-service-area gray-bg">
+    <div class="col-md-6 p-0 col-xs-12">
+        <div class="home-service-wrapper ptb-120" style="background-image:url(assets/img/service/1.jpg)">
+            <div class="home-content">
+                <h3>Helping centers 24/7 <br> hours open.</h3>
+                <div class="content">
+                    <h4>Contact Us :</h4>
+                    <p>+123-3258-2548 <br> hmend@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-6 p-0 col-xs-12">
+        <div class="home-area-right">
+            <div class="home-section">
+                <h3>We Are Professional & Carefully Home Services.</h3>
+                <div class="homes-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="home-wrapper mb-20">
+                        <div class="home-text">
+                            <p>Lorem ipsum dolor sit amet consect adipisicing elit sed. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="home-wrapper mb-20">
+                        <div class="home-text">
+                            <p>Lorem ipsum dolor sit amet consect adipisicing elit sed. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-20">
+                    <div class="home-wrapper">
+                        <div class="home-text">
+                            <p>Lorem ipsum dolor sit amet consect adipisicing elit sed. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-20">
+                    <div class="home-wrapper">
+                        <div class="home-text">
+                            <p>Lorem ipsum dolor sit amet consect adipisicing elit sed. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- home-service-end -->
+<!-- our-service-area-start -->
+<div class="our-service-area pt-120 pb-90">
+    <div class="container">
+        <div class="section-title mb-60 text-center" style="background-image:url(assets/img/logo/section.png)">
+            <h4>We Provide</h4>
+            <h2>Our Services</h2>
+        </div>
+        <div class="row">
+            @foreach (Service service in Model)
+            {
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper mb-30">
+                        <div class="service-img">
+                            <img src="~/assets/img/service/@service.ServicePhotos.FirstOrDefault().Path" alt="" />
+                        </div>
+                        <div class="service-text text-center">
+                            <div class="service-icon-img">
+                                <i class="flaticon-house-icon"></i>
+                            </div>
+                            <h2><a href="~/service-details.html">@service.Title</a></h2>
+                            <p>@(service.Description.Length > 150 ? service.Description.Substring(0, 150)+"..." : service.Description)</p>
+                            <a href="~/service-details.html">read more</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- our-service-area-end -->

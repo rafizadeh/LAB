@@ -1,0 +1,53 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- breadcrumb-banner-area -->
+<div class="breadcrumb-banner-area ptb-120 bg-opacity" style="background-image:url(assets/img/bg/6.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text text-center">
+                    <h2>service-details</h2>
+                    <ul class="breadcrumb-menu">
+                        <li><a href="~/#">service</a></li>
+                        <li><a href="~/#">about us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-banner-area-end -->
+<!-- project-details-area-start -->
+<div class="project-details-area pt-120">
+    <div class="container">
+        <div class="row">
+            @foreach (ServicePhoto servicePhoto in Model.ServicePhotos)
+            {
+                <div class="col-md-6 col-sm-6">
+                    <div class="project-details-img-wrapper">
+                        <img src="~/assets/img/service/@servicePhoto.Path" alt="@Model.Title" />
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- project-details-area-start -->
+<!-- project-details-3-start -->
+<div class="project-details-3 pt-40 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-text">
+                    <h3>@Model.Title</h3>
+                    <p>@Model.Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project-details-3-end -->	
