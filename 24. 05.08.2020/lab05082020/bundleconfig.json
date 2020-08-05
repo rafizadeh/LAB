@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "wwwroot/css/main.min.css",
+    "inputFiles": [
+      "wwwroot/css/animate.css",
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/fonts.css"
+    ]
+  }
+]
