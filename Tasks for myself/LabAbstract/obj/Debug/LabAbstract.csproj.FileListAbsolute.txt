@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.exe.config
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.pdb
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.pdb
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.exe.config
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.exe
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\bin\Debug\LabAbstract.pdb
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.csprojAssemblyReference.cache
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.exe
+C:\Users\User\Desktop\code\LAB\Tasks for myself\LabAbstract\obj\Debug\LabAbstract.pdb

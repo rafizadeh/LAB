@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
+}
+
+main{
+    width: 1170px;
+    margin: 50px auto;
+}
+
+.latestNews .item{
+    margin: 0px 15px;
+    border-radius: 3%;
+    overflow: hidden;
+    box-shadow: 6px 3px 5px 4px #cccc;
+}
+.latestNews .float{
+    float: left;
+    width: 30.33%;
+}
+.latestNews .item .image{
+        position: relative;
+}
+.latestNews .item .image img{
+    max-width: 100%;
+}
+
+.latestNews .item .image .time{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background-color: #5e54b2;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 11px 13px;
+    z-index: 1;
+}
+
+.latestNews .item .image .backEffect{
+    position: absolute;
+    width: 61px;
+    height: 60px;
+    background-color: white;
+    top: 6px;
+    left: 60px;
+    z-index: 0;
+}
+.latestNews .item .image .time span{
+    display: block;
+}
+.latestNews .item .info{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+} 
+.latestNews .item .info p:first-child{
+    font-size: 16px;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-weight: 600;
+}
+.latestNews .item .info p:nth-child(2){
+    font-size: 14px;
+    color: #777777;
+    line-height: 26px;
+    margin: 10px 0px;
+    text-align: center;
+}
+.latestNews .item .info a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+.latestNews .item .info a i{
+    transition: all 0.3s;
+}
+.latestNews .item .info a:hover i{
+    margin-left: 8px;
+    transition: all 0.3s;
+}
+

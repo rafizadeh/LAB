@@ -1,0 +1,64 @@
+﻿@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- slider-area-start -->
+<div class="slider-area">
+    <div class="slider-wrapper ptb-250" style="background-image:url(assets/img/slider/1.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 pr-0">
+                    <div class="slider-text">
+                        <h2 class="cd-headline loading-bar">
+                            The most targetted repair
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">theme.</b>
+                                <b>company.</b>
+                                <b>man.</b>
+                            </span>
+                        </h2>
+                        <div class="slider-info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddoi dmj iusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <a href="~/#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider-area-end -->
+
+<!-- our-service-area-start -->
+<div class="our-service-area pt-120 pb-90">
+    <div class="container">
+        <div class="section-title mb-60 text-center" style="background-image:url(assets/img/logo/section.png)">
+            <h4>We Provide</h4>
+            <h2>Our Services</h2>
+        </div>
+        <div class="row">
+            @foreach (var service in Model)
+            {
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper mb-30">
+                        <div class="service-img">
+
+                            <img src="~/assets/img/service/@service.ServicePhotos.FirstOrDefault().Path" alt="" />
+                        </div>
+                        <div class="service-text text-center">
+                            <div class="service-icon-img">
+                                <i class="flaticon-house-icon"></i>
+                            </div>
+                            <h2><a href="~/service-details.html">@service.Title</a></h2>
+                            <p>@service.Description</p>
+                            <a href="@Url.Action("Details", "Service", new { id = service.Id })">read more</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- our-service-area-end -->

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+/* color: #222222;
+font-size: 15px; */
+
+li h4, li ul {
+/* 
+    display: none; */
+}
+
+.menu ul li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.menu_tab{
+    position: absolute;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+a:hover,  .myActive  {
+    color:#c29958;
+    text-decoration: none;
+}
+
+.search {
+    background-color: white!important;
+    font-size: small;
+    padding-top: 9px;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.border {
+    border: none!important;
+    background-color: transparent;
+}
+/* .shop_position{
+    position: absolute;
+} */
+.home_menu ul li{
+    margin-right: 0;
+}
+.drop_home_menu{
+    position: absolute;
+    background: #ede7f6;
+    width: 100px;
+    top: 30px;
+
+}
+.drop_home_menu li{
+    padding: 6px;
+    border-bottom: 0.5px dashed black;
+}
+.page_menu ul li, h4{
+    margin-right: 0;
+}
+/* .page_menu{
+    width: 400px;
+    background:  #ede7f6;
+} */

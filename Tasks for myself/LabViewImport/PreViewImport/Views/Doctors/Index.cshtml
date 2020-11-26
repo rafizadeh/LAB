@@ -1,0 +1,100 @@
+﻿@model List<PreViewImport.Models.Doctor>
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Page Title -->
+<div class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-7">
+                <h2>Doctors</h2>
+            </div>
+
+            <div class="col-md-6 col-lg-5">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Doctors</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title -->
+<!-- Expert Doctors -->
+<section class="expert-doctors ptb-100 gray-bg pb-70">
+    <div class="container">
+        <div class="row">
+            @foreach (var doctor in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-card">
+                        <div class="thumb-img">
+                            <img src="~/Uploads/Doctors/@doctor.Photo" alt="Doctor Image" />
+                            <div class="hover-social">
+                                <div class="d-table">
+                                    <div class="d-tablecell">
+                                        <ul>
+                                            <li>
+                                                <a href="@doctor.Twitter">
+                                                    <i class="icofont-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="@doctor.Facebook">
+                                                    <i class="icofont-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="@doctor.Linkedin">
+                                                    <i class="icofont-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href=@Url.Action("Details","Doctors", new { slug = doctor.Slug })>
+                            <div class="caption-text text-center">
+                                <h3>@doctor.Fullname</h3>
+                                <span class="designation mb-10">@doctor.Department.Name</span>
+
+                                <p>
+                                    @{
+                                        int len = 100;
+                                        @(doctor.Description.Length > len ? doctor.Description.Substring(0, len) + "..." : doctor.Description);
+                                    }
+                                </p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        }
+
+
+
+        </div>
+    </div>
+</section>
+<!-- Edn Expert Doctors -->
+<!-- Call To Action -->
+<section class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="call-to-action-text">
+                    <i class="icofont-first-aid"></i>
+                    <h3>Health Care Center</h3>
+                    <p>if you have any Emerangcy by health problem contact this <span>No. 035 687 9514</span> or contact form</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="#" class="default-btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Call To Action -->

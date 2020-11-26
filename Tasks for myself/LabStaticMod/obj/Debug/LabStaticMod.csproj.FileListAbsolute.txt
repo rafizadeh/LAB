@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\bin\Debug\LabStaticMod.exe.config
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\bin\Debug\LabStaticMod.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\bin\Debug\LabStaticMod.pdb
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\obj\Debug\LabStaticMod.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\obj\Debug\LabStaticMod.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\obj\Debug\LabStaticMod.exe
+C:\Users\User\Desktop\LAB\Tasks for myself\LabStaticMod\obj\Debug\LabStaticMod.pdb

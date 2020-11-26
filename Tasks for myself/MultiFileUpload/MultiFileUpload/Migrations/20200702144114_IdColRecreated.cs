@@ -1,0 +1,23 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace MultiFileUpload.Migrations
+{
+    public partial class IdColRecreated : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.RenameColumn(
+                name: "ImgId",
+                table: "Photos",
+                newName: "Id");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.RenameColumn(
+                name: "Id",
+                table: "Photos",
+                newName: "ImgId");
+        }
+    }
+}

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="mt-5">Student table</h2>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#student-modal">
+    Add a new student
+</button>
+
+
+<div class="row student-actions">
+    <div class="col-md-12">
+        <table class="table table-bordered studentList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Group</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cabbar</td>
+                    <td>Hasanov</td>
+                    <td>Ziba Tech</td>
+                    <td>
+                        <a class="edit" href="#"><i class="fas fa-edit"></i></a>
+                        <a class="delete" href="#"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="student-modal" tabindex="-1" role="dialog" aria-labelledby="student-formLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="student-form">
+                    <div class="form form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" name="Name" id="Name" />
+                    </div>
+                    <div class="form form-group">
+                        <label for="Surname">Surname</label>
+                        <input type="text" class="form-control" name="Surname" id="Surname" />
+                    </div>
+                    <div class="form form-group">
+                        <label for="GroupId">Group</label>
+                        <select name="GroupId" id="GroupId" class="form-control"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="modal-action" class="btn btn-primary">Add student</button>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,310 @@
+﻿@model List<Blog>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- top header wrapper start -->
+<div class="page_title_section">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+                <!-- section_heading start -->
+                <div class="col-lg-9 col-md-8 col-12 col-sm-7">
+
+                    <h1>blog categories</h1>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li> <a href="~/#"> Home </a>&nbsp; / &nbsp; </li>
+                            <li>blog categories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- top header wrapper end -->
+<!--job listing filter  wrapper start-->
+<div class="blog_ct_right_wrapper jb_cover">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+
+                @foreach (var blog in Model)
+                {
+                    <div class="jp_first_blog_post_main_wrapper jb_cover">
+                        <div class="jp_first_blog_post_img">
+                            <img src="~/images/blog3.jpg" class="img-responsive" alt="blog_img" />
+                        </div>
+                        <div class="jp_first_blog_post_cont_wrapper">
+                            <p><span>FEb 19, 2019</span></p>
+                            <h3>
+                                <a href=@Url.Action("Detail", "Blog", new { slug = blog.Slug })>@blog.Title</a>
+                            </h3>
+                            <p>
+                                Layout for agencies and freelancers. Fully animated and unique sections make item more attractive. Brabus is the best way to create agency or portfolio website. It is easy to customize codes, based on Bootstrap and Sass.Brabus is smooth.
+                            </p>
+                        </div>
+                        <div class="jp_first_blog_bottom_cont_wrapper jb_cover">
+                            <div class="jp_blog_bottom_left_cont">
+                                <ul>
+                                    <li><img src="~/images/bs1.jpg" alt="small_img" />&nbsp;&nbsp; Jhon Doe</li>
+                                </ul>
+                            </div>
+                            <div class="jp_blog_bottom_right_cont">
+                                <p><a href="~/#"><i class="far fa-comment-dots"></i><span>4</span></a></p>
+                                <ul>
+                                    <li></li>
+                                    <li><a href="~/#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="blog_pagination_section pd22 jb_cover">
+                    <ul>
+                        <li>
+                            <a href="~/#" class="prev"> <i class="flaticon-left-arrow"></i> </a>
+                        </li>
+                        <li>
+                            <a href="~/#">1</a>
+                        </li>
+                        <li class="third_pagger">
+                            <a href="~/#">2</a>
+                        </li>
+                        <li class="d-block d-sm-block d-md-block d-lg-block">
+                            <a href="~/#">3</a>
+                        </li>
+                        <li class="d-none d-sm-block d-md-block d-lg-block">
+                            <a href="~/#">...</a>
+                        </li>
+                        <li class="d-none d-sm-block d-md-block d-lg-block">
+                            <a href="~/#">6</a>
+                        </li>
+
+                        <li>
+                            <a href="~/#" class="next"> <i class="flaticon-right-arrow"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="job_filter_category_sidebar jb_cover">
+                    <div class="job_filter_sidebar_heading jb_cover">
+                        <h1>search</h1>
+                    </div>
+
+                    <div class="category_jobbox jb_cover">
+                        <div class="jp_blog_right_search_wrapper jb_cover">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="job_filter_category_sidebar jb_cover">
+                    <div class="job_filter_sidebar_heading jb_cover">
+                        <h1>blog category</h1>
+                    </div>
+
+                    <div class="category_jobbox jb_cover">
+                        <ul class="blog_category_link jb_cover">
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">Graphic Designer <span>(214)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">Engineering Jobs <span>(514)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">Mainframe Jobs <span>(554)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">Legal Jobs <span>(457)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">IT Jobs <span>(1254)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">R&amp;D Jobs <span>(554)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">Government Jobs <span>(350)</span></a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="~/#">PSU Jobs <span>(221)</span></a></li>
+
+                        </ul>
+                        <div class="seeMore"><a href="~/#">view all categories</a></div>
+                    </div>
+                </div>
+                <div class="job_filter_category_sidebar jb_cover">
+                    <div class="job_filter_sidebar_heading jb_cover">
+                        <h1>career advice</h1>
+                    </div>
+
+                    <div class="category_jobbox jb_cover">
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/blog_ct1.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">Job Seekeks OCT - 2019</a></h4>
+                                <p><i class="far fa-calendar"></i>&nbsp;20 OCT, 2019</p>
+                            </div>
+                        </div>
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/blog_ct2.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">digital world NOV - 2018</a></h4>
+                                <p><i class="far fa-calendar"></i> &nbsp;20 OCT, 2018</p>
+                            </div>
+                        </div>
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/blog_ct3.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">Job Seekeks DEC - 2019</a></h4>
+                                <p><i class="far fa-calendar"></i> &nbsp;20 OCT, 2019</p>
+                            </div>
+                        </div>
+                        <div class="seeMore"><a href="~/#">view all </a></div>
+                    </div>
+                </div>
+                <div class="job_filter_category_sidebar jb_cover">
+                    <div class="job_filter_sidebar_heading jb_cover">
+                        <h1>job spotlight</h1>
+                    </div>
+
+                    <div class="category_jobbox jb_cover">
+                        <div class="jp_spotlight_slider_wrapper">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="jp_spotlight_slider_img_Wrapper">
+                                        <img src="~/images/spt1.jpg" alt="spotlight_img" />
+                                    </div>
+                                    <div class="jp_spotlight_slider_cont_Wrapper">
+                                        <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
+
+                                        <p><a href="~/#">Webstrot Technology Ltd.</a></p>
+                                        <ul>
+                                            <li><i class="far fa-money-bill-alt"></i>&nbsp; $12K - 15k P.A.</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>&nbsp; Caliphonia, PO 455001</li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_btn search_btn news_btn overview_btn  jb_cover">
+
+                                        <a href="~/#">apply now !</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="jp_spotlight_slider_img_Wrapper">
+                                        <img src="~/images/spt1.jpg" alt="spotlight_img" />
+                                    </div>
+                                    <div class="jp_spotlight_slider_cont_Wrapper">
+                                        <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
+                                        <p><a href="~/#">Webstrot Technology Ltd.</a></p>
+                                        <ul>
+                                            <li><i class="far fa-money-bill-alt"></i>&nbsp; $12K - 15k P.A.</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>&nbsp; Caliphonia, PO 455001</li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_btn search_btn news_btn overview_btn  jb_cover">
+
+                                        <a href="~/#">apply now !</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="jp_spotlight_slider_img_Wrapper">
+                                        <img src="~/images/spt1.jpg" alt="spotlight_img" />
+                                    </div>
+                                    <div class="jp_spotlight_slider_cont_Wrapper">
+                                        <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
+                                        <p><a href="~/#">Webstrot Technology Ltd.</a></p>
+                                        <ul>
+                                            <li><i class="far fa-money-bill-alt"></i>&nbsp; $12K - 15k P.A.</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>&nbsp; Caliphonia, PO 455001</li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_btn search_btn news_btn overview_btn  jb_cover">
+
+                                        <a href="~/#">apply now !</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="job_filter_category_sidebar jb_cover">
+                    <div class="job_filter_sidebar_heading jb_cover">
+                        <h1>recent resumes</h1>
+                    </div>
+
+                    <div class="category_jobbox jb_cover">
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/rs1.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">akshay <br>due</a></h4>
+                                <p><i class="fa fa-folder-open"></i> &nbsp; dancer</p>
+                            </div>
+                        </div>
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/rs2.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">farhan <br> Shaikh</a></h4>
+                                <p><i class="fa fa-folder-open"></i> &nbsp; UI designer</p>
+                            </div>
+                        </div>
+                        <div class="jp_rightside_career_content_wrapper jb_cover">
+                            <div class="jp_rightside_career_img">
+                                <img src="~/images/rs3.jpg" alt="career_img" />
+                            </div>
+                            <div class="jp_rightside_career_img_cont">
+                                <h4><a href="~/#">maria <br> simon</a></h4>
+                                <p><i class="fa fa-folder-open"></i>&nbsp; developer</p>
+                            </div>
+                        </div>
+                        <div class="seeMore"><a href="~/#">view all resume</a></div>
+                    </div>
+                </div>
+                <div class="jp_add_resume_wrapper jb_cover">
+                    <div class="jp_add_resume_img_overlay"></div>
+                    <div class="jp_add_resume_cont">
+                        <img src="~/images/logo2.png" alt="logo" />
+                        <h4>Get Best Matched Jobs On your Email. Add Resume NOW!</h4>
+                        <div class="width_50">
+                            <input type="file" id="input-file-now-custom-233" class="dropify" data-height="90" /><span class="post_photo">add resume</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- news app wrapper start-->
+<div class="news_letter_wrapper jb_cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="job_newsletter_wrapper jb_cover">
+                    <div class="jb_newslwtteter_left">
+                        <h2> Looking For A Job</h2>
+                        <p>Your next level Product developemnt company assetsYour next level Product </p>
+                    </div>
+                    <div class="jb_newslwtteter_button">
+                        <div class="header_btn search_btn news_btn jb_cover">
+
+                            <a href="~/#">submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- news app wrapper end-->

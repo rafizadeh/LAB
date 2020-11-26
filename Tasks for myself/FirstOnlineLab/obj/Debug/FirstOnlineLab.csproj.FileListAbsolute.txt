@@ -1,0 +1,4 @@
+C:\Users\User\Desktop\LAB\Tasks for myself\FirstOnlineLab\obj\Debug\FirstOnlineLab.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\FirstOnlineLab\obj\Debug\FirstOnlineLab.Properties.Resources.resources
+C:\Users\User\Desktop\LAB\Tasks for myself\FirstOnlineLab\obj\Debug\FirstOnlineLab.csproj.GenerateResource.cache
+C:\Users\User\Desktop\LAB\Tasks for myself\FirstOnlineLab\obj\Debug\FirstOnlineLab.csproj.CoreCompileInputs.cache

@@ -1,0 +1,53 @@
+﻿@model Photo
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Multi File Upload Management</h2>
+<hr />
+
+<form method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Index">
+    <div class="form-group">
+        <input asp-for="Files" type="file" name="files" class="lol" multiple />
+        <input asp-for="Files" type="submit" value="Submit" />
+        <span asp-validation-for="Files" class="text-danger"></span>
+        <hr />
+    </div>
+</form>
+
+
+@section Scripts{
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("form").submit(function (e) {
+                e.preventDefault();
+                if (document.querySelector(".lol").value == "") {
+                    swal({
+                        title: "Please select at least 1 file!",
+                        icon: "warning"
+                    });
+                } else {
+                    //swal("Files uploaded !").then(() => {
+                    //    document.querySelector("form").submit();
+                    //});
+                    swal({
+                        title: "Are you sure to upload files?",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("Files Uploaded!", {
+                                    icon: "success",
+                                });
+                                setTimeout(() => { document.querySelector("form").submit() }, 2000)
+                            } else {
+                                swal("You postponed!");
+                            }
+                        });
+                }
+            });
+        });
+    </script>
+}

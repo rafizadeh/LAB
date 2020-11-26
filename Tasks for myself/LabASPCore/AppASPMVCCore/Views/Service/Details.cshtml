@@ -1,0 +1,35 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- project-details-area-start -->
+<div class="project-details-area pt-120">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.ServicePhotos)
+            {
+                <div class="col-md-6 col-sm-6">
+                    <div class="project-details-img-wrapper">
+                        <img src="~/assets/img/project/@item.Path" alt="" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- project-details-area-start -->
+<!-- project-details-3-start -->
+<div class="project-details-3 pt-40 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-text">
+                    <h3>@Model.Title</h3>
+                    <p>@Model.Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project-details-3-end -->	
